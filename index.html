@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada De Aprendizado HTML</title>
+</head>
+<body>
+    <header>
+      <h1 id="Inicio">Jornada De Aprendizado <abbr title="HyperText Markup Language">HTML</abbr></h1>
+      <hr >
+      <h2>Índice</h2>
+      <ul>
+          <li><a href="#Estrutura">Estrutura Básica Do HTML</a></li>
+          <li><a href="#Falando">Falando Sobre Tags</a></li>
+          <li><a href="#Atributos">Atributos Das Tags</a></li>
+          <li><a href="#Textos">Textos</a></li>
+          <li><a href="#Listas">Listas Ordenadas e Não Ordenadas</a></li>
+          <li><a href="#Links">Links</a></li>
+          <li><a href="#Uteis">Links Úteis</a></li>
+      </ul>
+    </header>
+        <h2 id="Estrutura">Estrutura Básica Do <abbr title="HyperText Markup Language">HTML</abbr></h2>
+        <small><a href="#Inicio">(Voltar para o Início)</a></small>
+          <p><abbr title="HyperText Markup Language">HTML</abbr>, que significa <mark>HyperText Markup Language</mark>, é a linguagem de marcação padrão usada para criar e estruturar páginas na web. Um documento HTML é composto por uma série de elementos HTML, que são usados para definir diferentes partes do conteúdo da página, como texto, imagens, links, entre outros. Esses elementos são representados por tags, que normalmente vêm em pares: uma tag de abertura e uma tag de fechamento, com o conteúdo entre elas. Uma tag de abertura é composta pelo nome do elemento cercado por sinais de menor e maior (< >), e a tag de fechamento é semelhante, mas inclui uma barra (/) antes do nome do elemento.</p>
+          <p>Cada parte do documento tem um propósito específico:        
+          !DOCTYPE html>: Declara que este documento é um documento <u>HTML5.</u> É a primeira linha de qualquer documento HTML e é usada para informar ao navegador a versão do HTML que está sendo usada.
+          html lang="pt">: Este é o elemento raiz de um documento HTML. O atributo lang especifica o idioma do conteúdo do documento, o que ajuda os motores de busca e navegadores.
+          head>: Contém metadados sobre o documento, que não são exibidos diretamente na página web. Isso inclui coisas como o conjunto de caracteres usado (meta charset="UTF-8">), a compatibilidade com dispositivos móveis (meta name="viewport">), e o título da página (title>), que é mostrado na aba do navegador.
+          body>: Contém todo o conteúdo que é exibido aos usuários na página web, como texto, imagens, vídeos, jogos, faixas de áudio, etc. Elementos como h1> (um cabeçalho de nível um), p> (um parágrafo), e a> (um link, também conhecido como âncora) são usados aqui para estruturar e vincular o conteúdo.
+              Esta é a estrutura básica de um documento HTML. A partir daqui, você pode começar a adicionar mais elementos e atributos para criar páginas web mais complexas e interativas.</p>
+          <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+          <br>
+
+        <h2 id="Falando">Falando Sobre Tags</h2>
+        <small><a href="#Inicio">(Voltar para o Início)</a></small>
+          <p>As tags HTML são <i><u>fundamentais</u></i> para criar e estruturar páginas na web, servindo como o esqueleto de qualquer documento online. Elas definem como o conteúdo é apresentado e interage com os usuários, desde a estrutura básica (!DOCTYPE html>, html>, head>, body>) até elementos específicos como cabeçalhos (h1> a h6>), parágrafos (p>), links (a>), imagens (img>), listas (ol>, ul>, li>), e formulários (form>, input>, textarea>, button>). Tags semânticas como article>, section>, nav>, e footer> melhoram a acessibilidade e a SEO, estruturando o conteúdo de forma significativa. Entender e usar essas tags de maneira eficaz é essencial para desenvolver páginas web ricas e bem organizadas.</p>
+          <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+          <br>
+
+        <h2 id="Atributos">Atributos Das Tags</h2>
+        <small><a href="#Inicio">(Voltar para o Início)</a></small>
+          <p>Os atributos das tags HTML desempenham um papel crucial ao adicionar informações adicionais e funcionalidades aos elementos de uma página web, enriquecendo a experiência do usuário e a capacidade de interação do site. Esses atributos são inseridos dentro das tags de abertura e consistem em um nome de atributo seguido por um valor atribuído, geralmente encapsulado entre aspas.</p>
+        <h4>Atributos Comuns</h4>
+        <ul>
+            <li><strong>class:</strong> Um dos atributos mais usados, permite aplicar estilos CSS específicos a um elemento ou grupo de elementos. Diversos elementos podem compartilhar a mesma classe, facilitando a aplicação de estilos ou a manipulação via JavaScript.</li>
+            <br>
+            <li><strong>id:</strong> Identificador único para um elemento na página. Este atributo é crucial quando se quer aplicar um estilo específico ou realizar manipulações com JavaScript em um único elemento.</li>
+            <br>
+            <li><strong>style:</strong> Permite a inclusão direta de estilos CSS em um elemento, embora o uso de folhas de estilo externas seja mais recomendado para manter a separação entre conteúdo e apresentação.</li>
+            <br>
+            <li><strong>title:</strong> Fornece uma informação adicional sobre o elemento, geralmente exibida como uma dica de ferramenta quando o usuário passa o mouse sobre o elemento.</li>
+            <br>
+            <li><strong>href:</strong> Especificamente usado na tag a>, define o URL para o qual o link aponta, facilitando a navegação entre páginas e sites.</li>
+            <br>
+            <li><strong>src:</strong>  Usado em elementos como img>, audio>, e video>, especifica o caminho para o arquivo que deve ser incorporado na página.</li>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+        </ul>
+        <h4>Atributos de Formulário</h4>
+        <ul>
+            <li><strong>action:</strong> Define o URL para onde os dados do formulário serão enviados após a submissão.</li>
+            <br>
+            <li><strong>method:</strong> Especifica o método HTTP (geralmente "GET" ou "POST") que será usado ao enviar o formulário.</li>
+            <br>
+            <li><strong>type:</strong> Define o tipo de input> (como "text", "password", "submit"), determinando sua funcionalidade no formulário.</li>
+            <br>
+            <li><strong>value:</strong> Define o valor inicial de um input>, que pode ser enviado com o formulário ou modificado pelo usuário.</li>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+        </ul>
+        <h4>Atributos de Acessibilidade</h4>
+        <ul>
+            <li><strong>alt:</strong> Usado em img>, fornece uma descrição textual da imagem para leitores de tela, melhorando a acessibilidade para usuários com deficiência visual.</li>
+            <br>
+            <li><strong>aria-label, aria-labelledby, aria-describedby:</strong> Estes atributos da ARIA (Accessible Rich Internet Applications) ajudam a fornecer contextos mais ricos para conteúdos web, facilitando a navegação e compreensão por usuários de tecnologias assistivas.</li>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+        </ul>
+        <h4>Atributos Booleanos</h4>
+        <p>Alguns atributos, como disabled (usado em elementos de formulário para desativá-los) e checked (indicando se um elemento do tipo caixa de seleção ou rádio está selecionado), são booleanos. Isso significa que sua presença no elemento, independentemente do valor, indica verdadeiro, enquanto a ausência indica falso.
+
+            A utilização eficaz desses atributos permite não apenas melhorar a aparência e a funcionalidade de uma página web, mas também torná-la mais acessível e amigável para os usuários. Assim, o domínio sobre os atributos HTML é essencial para qualquer desenvolvedor web que deseje criar sites completos e responsivos.</p>
+            <br>
+        <h2 id="Textos">Textos</h2>
+        <small><a href="#Inicio">(Voltar para o Início)</a></small>
+            <p>Textos no HTML formam a espinha dorsal de quase todas as páginas na web, oferecendo informação, instrução, e entretenimento aos usuários. A maneira como o texto é estruturado e apresentado pode ter um impacto significativo na usabilidade e na aparência de um site. HTML fornece uma ampla gama de ferramentas para marcar texto, permitindo que os desenvolvedores destaquem significados, enfatizem conteúdos, e criem uma leitura agradável e acessível.</p>
+        <h4>Estruturando com Cabeçalhos</h4>
+            <p>Os cabeçalhos (h1> a h6>) são usados para estruturar o texto de forma hierárquica e semântica. O h1> é frequentemente reservado para o título mais importante da página, usualmente o nome do site ou o título do artigo, enquanto os cabeçalhos subsequentes (h2> a h6>) marcam subseções dentro do conteúdo. Esta hierarquia ajuda os usuários e os motores de busca a entenderem a estrutura do conteúdo, melhorando a navegação e a SEO (Search Engine Optimization).</p>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+        <h4>Parágrafos e Quebra de Linha</h4>
+            <p>O elemento p> marca os parágrafos, blocos de texto que são a unidade básica de composição em muitos tipos de escrita. Para inserir uma quebra de linha simples sem criar um novo parágrafo, usa-se a tag br>, útil para endereços ou poesia, onde a formatação de linha é parte da mensagem.</p>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+        <h4>Enfatizando Texto</h4>
+            <p>HTML oferece tags como em> e strong> para enfatizar texto, que, por padrão, são representados como itálico e negrito, respectivamente. Essas tags não só mudam a aparência do texto, mas também comunicam a importância e a ênfase para leitores de tela, aumentando a acessibilidade.</p>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+            <p>Listas em HTML vêm em duas formas: ordenadas (ol>) e desordenadas (ul>), com cada item da lista marcado por uma tag li>. Listas são essenciais para organizar informações de forma clara e digestiva, desde instruções passo a passo até agrupamentos de links relacionados.</p>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+        <h4>Links e Âncoras</h4>
+            <p>O elemento <a>, juntamente com o atributo href, é usado para criar links, permitindo aos usuários navegar de uma página para outra ou para recursos dentro da mesma página. Links são fundamentais para a natureza interconectada da web, permitindo o acesso fácil a recursos relacionados.</p>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+            <p>Para citações, o HTML oferece as tags blockquote> para citações longas e q> para citações curtas, enquanto cite> é usado para referenciar a fonte de uma citação ou mídia. Textos de código são marcados com code>, e quando se quer exibir um trecho de código de forma pré-formatada, usa-se pre>.</p>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+        <h4>Trabalhando com Espaços em Branco</h4>
+            <p>Por padrão, HTML ignora espaços em branco extras em texto. Para inserir espaços ou caracteres especiais que de outra forma seriam ignorados ou reservados, utiliza-se entidades de caracteres, como &.nbsp; para um espaço não-separável.
+               O tratamento de texto no HTML é, portanto, uma mistura de arte e técnica, exigindo dos desenvolvedores uma compreensão de como marcar conteúdo de forma eficaz para transmitir informação, estilo e estrutura, melhorando a experiência do usuário e a eficácia da comunicação na web.</p>
+            <br>
+        <h2 id="Listas">Listas Ordenadas e Não Ordenadas</h2>
+        <small><a href="#Inicio">(Voltar para o Início)</a></small>
+            <p>Listas, tanto ordenadas quanto não ordenadas, são ferramentas valiosas no arsenal de um desenvolvedor web, permitindo a organização clara e eficiente de informações em uma página HTML. Vamos explorar como essas listas são implementadas e como elas podem ser utilizadas para melhorar a apresentação do conteúdo na web.</p>
+        <h4>Listas Não Ordenadas ul></h4>
+            <p>As listas não ordenadas são utilizadas quando a ordem dos itens não é importante. Elas são marcadas por padrão com bullets (pontos, quadrados ou círculos), dependendo do estilo do navegador ou das regras CSS aplicadas. Para criar uma lista não ordenada, usamos a tag ul> (unordered list), e cada item da lista é definido pela tag li> (list item).</p>
+            <p>ul></p>        
+            <p>li>Item 1/li></p>
+              <p>li>Item 2/li></p>
+              <p>li>Item 3/li></p>
+            <p>/ul></p>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+            <p>Este código HTML resultará em uma lista não ordenada com três itens, cada um em uma linha separada e precedido por um bullet padrão.</p>
+        <h4>Listas Ordenadas ol></h4>
+            <p>Por outro lado, as listas ordenadas são usadas quando a sequência dos itens é importante. Elas são numeradas automaticamente, começando por "1" por padrão, mas podem ser personalizadas com CSS. Para criar uma lista ordenada, usamos a tag ol> (ordered list), e cada item é definido novamente pela tag li>.</p>
+            <p>ol></p>
+              <p>li>Primeiro item/li></p>
+              <p>li>Segundo item/li></p>
+            <p>li>Terceiro item/li></p>
+            <p>/ol></p>
+            <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+            <p>Neste exemplo, a lista será numerada de acordo com a sequência padrão, começando por "1" e aumentando para cada item subsequente.</p>
+        <h4>Personalizando a Aparência</h4>
+            <p>Ambos os tipos de lista podem ser personalizados com CSS para atender às necessidades de design específicas de um site. As propriedades CSS podem ser aplicadas para alterar a cor, o estilo do marcador (bullet) ou o tipo de numeração, dando aos desenvolvedores um controle preciso sobre a aparência das listas.</p>
+        <h4>Uso e Aplicações</h4>
+            <p>As listas, sejam ordenadas ou não, são usadas em uma variedade de contextos na web. Elas são ideais para navegação de menu, listas de itens de produtos, índices de conteúdo, instruções passo a passo e muito mais. A capacidade de organizar informações de forma clara e lógica torna as listas uma ferramenta indispensável para desenvolvedores web.
+                Em resumo, as listas ordenadas e não ordenadas no HTML são uma parte fundamental da estruturação de conteúdo na web, oferecendo uma maneira simples e eficaz de apresentar informações de forma organizada e acessível aos usuários. Seja para criar um índice de conteúdo ou listar os recursos de um produto, as listas HTML são uma ferramenta versátil e poderosa para qualquer desenvolvedor web.</p>
+            <br>
+            <h2 id="Links">Links</h2>
+            <small><a href="#Inicio">(Voltar para o Início)</a></small>
+                <p>Links no HTML são uma parte essencial da experiência de navegação na web, permitindo que os usuários se movam facilmente entre páginas, sites e recursos online. Eles desempenham um papel crucial na conectividade da web, fornecendo uma maneira intuitiva e eficaz para os usuários descobrirem e acessarem informações relevantes. Vamos explorar como os links são criados e como podem ser usados de maneira eficaz em páginas HTML.</p>
+        <h4>Criando Links</h4>
+                <p>Em HTML, os links são criados usando a tag a> (âncora). O atributo href (hiperlink de referência) é usado para especificar o destino do link, ou seja, o URL para o qual o usuário será direcionado quando clicar no link.</p>
+                <p>a href="https://www.example.com">Visite o Exemplo/a></p>
+                <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+                <p>Neste exemplo simples, o texto "Visite o Exemplo" é exibido na página como um link clicável. Quando um usuário clica neste link, ele será redirecionado para a página "https://www.example.com".</p>
+        <h4>Links Relativos</h4>
+                <p>Além de URLs absolutos, os links também podem apontar para recursos dentro do próprio site usando URLs relativos. Isso é especialmente útil ao criar links entre páginas dentro do mesmo site.</p>
+                <p>a href="pagina.html">Ir para outra página/a></p>
+                <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+                <p>Neste exemplo, o link aponta para uma página chamada "pagina.html" no mesmo diretório do documento HTML atual.</p>
+        <h4>Ancoragens</h4>
+                <p>As âncoras, ou "links de âncora", são usadas para criar links para seções específicas dentro de uma página. Isso é feito usando o atributo href para apontar para o ID de um elemento na mesma página.</p>
+                <p>a href="#section2">Ir para a Seção 2/a></p>
+                <blockquote><font color="red">OBS: O simbolo '<' deve ser adicionado no início das tags. Foi retirado nos exemplos por motivo de interferência no código principal.</font></blockquote>
+                <p>Neste exemplo, ao clicar no link, a página rolará automaticamente para a seção com o ID "section2".</p>
+        <h4>Atributos Adicionais</h4>
+                <p>Além do href, a tag a> pode ter outros atributos importantes. Por exemplo, o atributo target="_blank" pode ser usado para abrir o link em uma nova janela do navegador, enquanto o atributo title pode fornecer uma dica de ferramenta ao passar o mouse sobre o link.</p>
+        <h4>Estilizando Links</h4>
+                <p>Links podem ser estilizados usando CSS para se integrarem harmoniosamente ao design de um site. Isso inclui a definição de cores, estilos de texto e efeitos de hover para fornecer feedback visual aos usuários quando eles interagem com os links.</p>
+        <h4>Conclusão</h4>
+                <p>Os links no HTML são uma ferramenta poderosa para conectar e navegar pela web. Com a capacidade de apontar para recursos dentro ou fora do site, criar âncoras para seções específicas de uma página e fornecer uma experiência de navegação intuitiva, os links desempenham um papel fundamental na experiência do usuário na web. Dominar a criação e o uso de links é essencial para qualquer desenvolvedor web que deseje criar sites funcionais e fáceis de usar.</p>
+                <br>
+        <h2 id="Uteis">Links Úteis</h2>
+        <small><a href="#Inicio">(Voltar para o Início)</a></small>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?v=3oSIqIqzN3M" title="Click aqui" target="_blank">5 Minutos de HTML Para Iniciantes</a>
+            </li>            
+            <li>
+                <a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos" title="Click aqui" target="_blank">Guia de HTML Para Iniciantes</a> 
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/tags/" title="Click aqui" target="_blank">Lista de Tags HTML</a>
+            </li>
+            <li>
+                <a href="https://web.dio.me/track/formacao-html-web-developer" title="Click aqui" target="_blank">Formação HTML Web Developer DIO</a>
+            </li>
+        </ul>
+        <footer>
+            <sup>Esse projeto tem como objetivo a pratica do HTML</sup>
+            <sub>Muito obrigado por chegarem até aqui. Espero que tenham gostado!</sub>
+        </footer>
+</body>
+</html>
